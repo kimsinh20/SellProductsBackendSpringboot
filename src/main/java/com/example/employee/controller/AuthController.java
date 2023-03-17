@@ -25,9 +25,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@RequestMapping("/api/auth")
 @RestController
-@CrossOrigin(origins = "*")
+@RequestMapping("/api/v1")
+@CrossOrigin(origins = "http://localhost:3000")
 public class AuthController {
     @Autowired
     UserService userService;
